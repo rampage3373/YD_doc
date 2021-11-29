@@ -9,21 +9,23 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <nav>
-    <a href="#/">中文</a>
-    <a href="#/en-us/">English</a>
-  </nav>
-  <div id="app"></div>
-</body>>
-<body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
-    }
+      name: 
+            '<select id="version-selector" name="version" class="sidebar-version-select">' +
+            '<option value="v1.0">v1.0</value>' +
+            '<option value="v1.1">v1.1</value>'+
+            '<option value="v1.2">v1.2</value>' +
+            "</select>",
+      repo: 'rampage3373/YD_doc',
+      loadNavbar: true,
+      loadSidebar: true,
+      logo: './assets/yidalogo.png',
+      }
   </script>
   <!-- Docsify v4 -->
+  
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
