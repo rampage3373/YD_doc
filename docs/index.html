@@ -21,11 +21,37 @@
       repo: 'rampage3373/YD_doc',
       loadNavbar: true,
       loadSidebar: true,
-      logo: './assets/yidalogo.png',
+      subMaxLevel: 1,
+      logo: '/assets/yidalogo2.svg',
+      auto2top: true,
+      name: '易达知识库',
+      search: 'auto',
+
+      search: {
+        maxAge: 86400000, //Expiration time, the default one day
+        paths: 'auto',
+        placeholder: '搜索',
+
+        placehoader: {
+          '/': '搜索',
+          '/en-us': 'Search'
+        },
+
+        noData: {
+          '/': '找不到结果',
+          '/en-us': 'No Results'
+        },
+
+        depth: 2,
+        hideOtherSidebarContent: false, //wether or not to hide other sidebar content
+
+      }
       }
   </script>
   <!-- Docsify v4 -->
   
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
 </body>
 </html>
