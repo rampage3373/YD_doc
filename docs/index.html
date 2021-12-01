@@ -12,23 +12,25 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '<select id="version-selector" name="version">' +
-            '<option value="v1.0">v1.0</value>' +
-            '<option value="v1.1">v1.1</value>'+
-            '<option value="v1.2">v1.2</value>' +
+      name: '<a id="home-link" class="app-name-link" data-nosearch href="/"><strong>易达知识库</strong></a>' +
+            '<select id="version-selector" name="version" class="sidebar-version-select">' +
+            '<option value="v1">v1</value>'+
+            '<option value="v2">v2</value>'+
             "</select>",
       //repo: 'rampage3373/YD_doc', //github repo
       loadNavbar: true,
       loadSidebar: true,
       subMaxLevel: 1,
-      logo: '/assets/yidalogo2.svg',
+      //logo: '/assets/yidalogo2.svg',
       auto2top: true,
-      name: '易达知识库',
+      // name: '易达知识库',
       search: 'auto',
       alias: {
-        '/v1/.*_sidebar.md':'https://github.com/rampage3373/YD_doc/tree/V1.0/docs',
-        '/v2/.*_sidebar.md':'https://github.com/rampage3373/YD_doc/tree/V1.1/docs'
-      }
+        '_sidebar.md':'/v1/_sidebar.md',
+        '/v2/sidebar.md':'/v2/_sidebar.md',
+        // '/v1/.*_sidebar.md':'https://github.com/rampage3373/YD_doc/tree/V1.0/docs/_sidebar.md',
+        // '/v2/.*_sidebar.md':'https://github.com/rampage3373/YD_doc/tree/V1.1/docs/_sidebar.md',
+      },
 
       search: {
         maxAge: 86400000, //Expiration time, the default one day
@@ -48,6 +50,7 @@
         depth: 2,
         hideOtherSidebarContent: false, //wether or not to hide other sidebar content
       },
+
       namespaces:[
         {
           id: "lang",
