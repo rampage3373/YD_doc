@@ -1,8 +1,8 @@
 <!-- _navbar.md -->
 
-* [语言]
+* [Language]
     * [:cn: 简体中文](/)
     * [:us: English](/en-us/)
-* [版本]
-    * [v1.0](/v1/)
+* [Version]
+    * [v1.0](/en-us/v1/)
     * [v2.0]
